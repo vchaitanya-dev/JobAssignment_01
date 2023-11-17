@@ -7,9 +7,8 @@ const {loading} = useFetch;
 <div >
   <h1>User Table</h1>
  {
-  !loading === false ? (
-    <Grid />
-  ) : <img src={loaders} alt="loaders" />}
+  loading === true ?  <img src={loaders} alt="loaders" />
+:<Grid />}
 </div>
   );
 }
